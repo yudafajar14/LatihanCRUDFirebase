@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityCRUD.BookDetailActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Author"
+        android:inputType="textPersonName"
+        android:id="@+id/EtAuthor"
+        android:layout_alignParentTop="true"
+        />
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ISBN"
+        android:inputType="textPersonName"
+        android:id="@+id/EtISBN"
+        android:layout_below="@id/EtAuthor"
+        />
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        android:id="@+id/EtTitle"
+        android:layout_below="@+id/EtISBN"
+        />
+
+    <Spinner
+        android:entries="@array/book_categories"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/EtTitle"
+        android:id="@+id/book_category_sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_category_sp"
+        android:layout_marginTop="32dp"
+        android:id="@+id/btnUpdate"
+        android:layout_centerHorizontal="true"
+        android:text="Update"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnUpdate"
+        android:layout_marginTop="32dp"
+        android:id="@+id/btnDelete"
+        android:layout_centerHorizontal="true"
+        android:text="Delete"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDelete"
+        android:layout_marginTop="32dp"
+        android:id="@+id/btnBack"
+        android:layout_centerHorizontal="true"
+        android:text="back"/>
+
+
+
+</RelativeLayout>
